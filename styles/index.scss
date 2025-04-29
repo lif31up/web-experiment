@@ -1,0 +1,27 @@
+/* this file is integrated with Tailwind CSS */
+
+// import all SCSS files
+@import "font";
+@import "color";
+@import "animation";
+
+// root css setting
+html {
+  font-size: 16px; color: black; font-family: "Lalezar", sans-serif;
+  background: white;
+}
+
+// do not change!
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
